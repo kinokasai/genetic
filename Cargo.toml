@@ -1,0 +1,8 @@
+[package]
+name = "gen"
+version = "0.1.0"
+authors = ["Alexandre Doussot <alexandre.doussot@epita.fr>"]
+
+[dependencies]
+rand = "*"
+rayon = "0.4.0"
