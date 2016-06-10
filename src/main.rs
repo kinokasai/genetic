@@ -1,8 +1,6 @@
 extern crate rand;
-extern crate rayon;
 
 use rand::Rng;
-use rayon::prelude::*;
 
 /* Create a trait for method chaining */
 
@@ -79,7 +77,7 @@ fn mate(idv : &str, pop : &Vec<String>) -> (String, String) {
 
 fn populate(plen : usize, ilen : usize) -> Vec<String> {
     (0..plen)
-        .map(|x| generate_string(ilen))
+        .map(|_| generate_string(ilen))
         .collect::<Vec<String>>()
 }
 
